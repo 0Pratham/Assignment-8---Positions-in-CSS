@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+        }
+        #blue{
+            background-color: blue;
+            z-index: 3;
+        }
+        #red{
+            background-color: red;
+            left: 60px;
+            z-index: 2;
+        }
+        #green{
+            background-color: green;
+            left: 120px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Z-Index</h1>
+    <p>Z Index is a CSS property that defines the order of overlapping HTML elements . <br>
+    Elements with a higher index will be placed on top of eements with a lower index .
+    <br>Z index only works on position elements (Position - absolute , relative , fixed .)</p>
+    <br><br>
+    <p>Blue color has highest Z-index therefore it is on the top and <br>
+        green color has lowest Z-index therefore it is in bottom of all .</p>
+    <div class="cont">
+        <div id="blue" class="box"></div>
+        <div id="red" class="box"></div>
+        <div id="green" class="box"></div>
+    </div>
+</body>
+</html>
